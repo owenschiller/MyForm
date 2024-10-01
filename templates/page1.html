@@ -6,5 +6,69 @@
 
 {% block content %}
     <!--page content-->
-    <h1>Page 1</h1>
+    
+	<div class="container mt-3">
+	
+	
+	<form action = "/response">
+		
+		<div class="row">
+			<div class="col">
+				<input type="text" class="form-control" placeholder="Enter username" name="user">
+			</div>
+			
+		</div>
+		<br>
+		
+
+	
+	  <h2>Where do you want to go?</h2>
+		  
+			<label for="browser" class="form-label">Choose your continent from the list:</label>
+			<input class="form-control" list="places" name="place" id="place">
+			<datalist id="places">
+			  <option value="Europe">
+			  <option value="North America">
+			  <option value="South America">
+			  <option value="Asia">
+			  <option value="Africa">
+			  <option value="Oceana">
+			</datalist>    
+			
+		  
+		
+		
+	
+	
+	  <h2>How long do you want to go for</h2>
+		  
+			<label for="browser" class="form-label">Choose from the list:</label>
+			<input class="form-control" list="weeks" name="week" id="week">
+			<datalist id="weeks">
+			  <option value="Less than a week">
+			  <option value="1-2 weeks">
+			  <option value="2-4 weeks">
+			  <option value="More than a month">
+			  
+			</datalist>    
+			
+		 
+		
+	
+	
+	  <h2>How many people are going?</h2>
+		  
+			<label for="browser" class="form-label">Choose from the list:</label>
+			<input class="form-control" list="persons" name="person" id="person">
+			<datalist id="persons">
+			  <option value="1 person">
+			  <option value="2 people">
+			  <option value="3-4 people">
+			  <option value="4-8 people">
+			  
+			</datalist>    
+			<button type="submit" class="btn btn-primary mt-3">Submit</button>
+		  </form>
+		</div>
+	
 {% endblock %}
