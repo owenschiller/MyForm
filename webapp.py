@@ -34,7 +34,7 @@ def render_response():
         reply1 = "Hi " + name1 + ", I suggest you go to Japan"
     
     else:
-        reply1 = "Hi " + name1 + ", I suggest you take a trip to the USA"
+        reply1 = "Hi " + name1 + ", I suggest you take a trip to New Zealand"
 
 
 
